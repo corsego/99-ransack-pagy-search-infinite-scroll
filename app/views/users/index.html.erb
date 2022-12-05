@@ -4,10 +4,13 @@
 
 <div id="users">
   <% @users.each do |user| %>
-    <%= render user %>
-    <p>
-      <%= link_to "Show this user", user %>
-    </p>
+    <div style='border: 2px solid;'>
+      <%= render user %>
+      <p>
+        <%= link_to "Show this user", user %>
+      </p>
+    </div>
+    <br>
   <% end %>
 </div>
 
