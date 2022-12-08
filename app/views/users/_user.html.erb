@@ -6,17 +6,17 @@
 
   <p>
     <strong>First name:</strong>
-    <%= user.first_name %>
+    <%= highlight(user.first_name, params.dig(:q, :first_name_or_last_name_or_email_cont)) %>
   </p>
 
   <p>
     <strong>Last name:</strong>
-    <%= user.last_name %>
+    <%= highlight(user.last_name, params.dig(:q, :first_name_or_last_name_or_email_cont)) %>
   </p>
 
   <p>
     <strong>Email:</strong>
-    <%= user.email %>
+    <%= highlight(user.email, params.dig(:q, :first_name_or_last_name_or_email_cont)) %>
   </p>
 
 </div>
